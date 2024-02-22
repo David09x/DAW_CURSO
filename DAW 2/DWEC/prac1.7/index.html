@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de Formulario</title>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<h1>Formulario de Ejemplo</h1>
+
+<form action="/submit" method="post" name="miForm">
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required><br>
+
+  <label for="correo">Correo electrónico:</label>
+  <input type="email" id="correo" name="correo" required><br>
+
+  <label for="contrasena">Contraseña:</label>
+  <input type="password" id="contrasena" name="contrasena" required><br>
+
+  <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+  <label for="numero">Número de teléfono:</label>
+  <input type="tel" id="numero" name="numero" required><br>
+
+  <label for="checkbox" id="capCheck">Acepto los términos y condiciones:</label>
+  <input type="checkbox" id="checkbox" name="aceptar_terminos"><br>
+  <span id="noTerms"></span>
+  <br>
+  <label for="radio1">Opción 1:</label>
+  <input type="radio" id="radio1" name="opcion" value="opcion1"><br>
+
+  <label for="radio2">Opción 2:</label>
+  <input type="radio" id="radio2" name="opcion" value="opcion2"><br>
+  <span id="noOption"></span>
+  <br>
+
+  <label for="seleccion">Seleccione una opción:</label>
+  <select id="seleccion" name="seleccion">
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+    <option value="opcion3">Opción 3</option>
+  </select><br>
+
+  <label for="area_texto">Comentarios:</label>
+  <textarea id="area_texto" name="comentarios" rows="4" cols="50"></textarea><br>
+
+
+  <input type="submit" value="Enviar" id="enviarBtn" onclick="alerta()" disabled>
+</form>
+<script>
+  document.getElementById('nombre').addEventListener('input', checkUser);
+  document.getElementById('correo').addEventListener('input', checkEmail);
+  document.getElementById('contrasena').addEventListener('input', checkPasswd);
+  document.getElementById('fecha_nacimiento').addEventListener('input', checkDate);
+  document.getElementById('numero').addEventListener('input', checkNumber);
+  document.getElementById('checkbox').addEventListener('input', checkTerms);
+  document.getElementById('radio1').addEventListener('input', checkOption);
+  document.getElementById('radio2').addEventListener('input', checkOption);
+  document.getElementById('area_texto').addEventListener('textarea', checkArea);
+  document.addEventListener('input', habilitarBoton);
+</script>
+</body>
+</html>
