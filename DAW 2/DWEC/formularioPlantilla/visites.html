@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptvisites.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bolomor</h1>
+        
+        <nav id="navbar">
+        <ul>
+            <li><a href="#">Inici</a></li>
+            <li><a href="jaciment.html">Jaciment</a></li>
+            <li><a href="visites.html">Visites</a></li>
+        </ul>
+    </nav>
+    </header>
+
+   
+
+    <main>
+        <form id="formulario">
+            <h2>Formulario de Reserva</h2>
+    
+            <label for="fecha">Fecha y Hora:</label>
+            <select id="fecha" name="fecha" required>
+                <option value="2023-11-15T10:00">15 de noviembre a las 10:00</option>
+                <option value="2023-11-16T10:00">16 de noviembre a las 10:00</option>
+                <option value="2023-11-17T10:00">17 de noviembre a las 10:00</option>
+                <option value="2023-11-18T10:00">18 de noviembre a las 10:00</option>
+                <option value="2023-11-19T10:00">19 de noviembre a las 10:00</option>
+                <option value="2023-11-20T10:00">20 de noviembre a las 10:00</option>
+                <option value="2023-11-21T10:00">21 de noviembre a las 10:00</option>
+    
+            </select>
+    
+            <label for="responsable">Persona Responsable:</label>
+            <input type="text" id="responsable" name="responsable" required><span id="errNombre"></span>
+    
+            <label for="telefono">Teléfono de Contacto:</label>
+            <input type="tel" id="telefono" name="telefono"  required><span id="errTel"></span>
+    
+            <label for="correo">Correo de Contacto:</label>
+            <input type="email" id="correo" name="correo" required><span id="errEmail"></span>
+    
+            <label for="num_personas">Número de Personas:</label>
+            <input type="number" id="num_personas" name="num_personas" min="1" required><span id="errNumero"></span>
+    
+            <div class="checkbox">
+                <label for="menores">¿Hay menores?</label>
+            <input type="checkbox" id="menores" name="menores"><span id="errCheck"></span>
+            </div>
+            
+    
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" rows="4"></textarea><span id="errComentarios"></span>
+    
+            <input type="submit" value="Enviar" id="submitButton" disabled>
+        </form>
+    
+    </main>
+
+    <footer class="footer">
+        <small>© Cova de bolomor</small>
+        <div>
+            <a href="#">Politica de Privacidad</a>
+        </div>
+    
+    </footer>
+
+    <script>
+   
+var submitButton = document.getElementById('submitButton');
+function validarFormulario() {
+
+    //(comprobarNombre() && comprobarTelefono() && comprobarCorreo() && comprobarNumeroPersonas() && comprobarCheckBox() && comprobarTextArea());
+submitButton.disabled = !(comprobarNombre() && comprobarTelefono() && comprobarCorreo() && comprobarNumeroPersonas() && comprobarCheckBox() && comprobarTextArea());
+return true;
+}
+document.getElementById("responsable").addEventListener("input", validarFormulario);
+document.getElementById("telefono").addEventListener("input",validarFormulario)
+document.getElementById("correo").addEventListener("input",validarFormulario)
+document.getElementById("num_personas").addEventListener("input",validarFormulario)
+document.getElementById("fecha").addEventListener("input", validarFormulario)
+document.getElementById("menores").addEventListener("input",validarFormulario)
+document.getElementById('observaciones').addEventListener("input",validarFormulario)
+document.getElementById('formulario').addEventListener('submit', function(event) {
+if (!document.getElementById('submitButton').disabled) {
+      mostrarDatos();
+    }
+  });
+  /*if (document.getElementById('submitButton')) {
+      mostrarDatos();
+    }
+  });*/
+    </script>
+</body>
+</html>
