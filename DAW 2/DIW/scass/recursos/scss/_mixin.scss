@@ -1,0 +1,39 @@
+@mixin coloresTexto($x,$y){
+    color:$x;
+    background-color: $y;
+}
+
+@mixin box-sizing($caja){
+    -webkit-box-sizing: $caja;
+    -moz-box-sizing: $caja;
+    box-sizing: $caja;
+ 
+}
+
+@mixin animaciones($name,$duration,$timing:linear){
+    -moz-transition: $name $duration $timing;
+  -webkit-transition: $name duration $timing;
+  animation: $name $duration $timing;
+}
+
+
+@mixin transiciones($property,$duration,$timing:linear){
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+
+@mixin responsive($size){
+    @if($size == medium){
+        @media(max-width: 1024px){
+           
+            @content;
+           }
+    }@else if($size == small){
+        @media(max-width: 800px){
+            @content;
+        }
+    }
+ 
+}
+

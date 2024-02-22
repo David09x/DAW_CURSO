@@ -1,0 +1,46 @@
+@import "_mixin.scss";
+$colorTexto:#eee;
+$colorTextoPasando:lighten(#eee,10%);
+$colorFondo:#15a;
+$colorFondoPasando:lighten(#15a,10%);
+$colorTitulo:lighten(#15a,10%);
+
+nav {
+    position: absolute;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    @include responsive(small){
+      display: none;
+    }
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  nav > ul {
+    width: 100%;
+    height: 32px;
+    @include coloresTexto($colorTexto,$colorFondo);
+  }
+  
+  nav a {
+    @include coloresTexto($colorTexto,$colorFondo);
+    text-decoration: none;
+    width: 160px;
+    padding: 7px 20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  li.categoria {
+    float: left;
+  }
+  
+  li.categoria:hover > a {
+    padding: 10px 20px;
+  }
+  li.categoria:hover ul.submenu {
+    height: 100px;
+  }

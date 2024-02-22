@@ -1,0 +1,46 @@
+$theme:dark;
+%button-block{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px;
+    cursor:pointer;   
+    @if $theme == dark{
+        background-color: lighten(#138,20%);
+        color: #eee;
+      }@else{
+        background-color: darken(#eee,20%);
+        color: #eee;
+      } 
+}
+
+%input-block{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+    
+}
+
+$iconos: ((icon-menu,url("../images/menu.png"),0,0,30px,32px),(icon-news,url("../images/news.png"),0,-90px,30px,39px),(icon-money,url("../images/money.png"),0,-100px,50px,54px),(icon-contact,url("../images/contact.png"),0,0,30px,32px));
+
+@each $elemento in $iconos{
+
+    $name: nth($elemento,1);
+    $background : nth($elemento,2);
+    $background-position-x: nth($elemento,3);
+    $background-position-y: nth($elemento,4);
+    $height: nth($elemento,5);
+    $width: nth($elemento,6);
+
+
+    .#{$name}{
+        background: $background;
+        background-position:  $background-position-x $background-position-y;
+        height: $height;
+        width: $width;
+    }
+}
+

@@ -1,0 +1,103 @@
+@import "_mixin.scss";
+@import "_contenido.scss";
+@import "_menu.scss";
+$colorTexto:#eee;
+$colorTextoPasando:lighten(#eee,10%);
+$colorFondo:#15a;
+$colorFondoPasando:lighten(#15a,10%);
+$colorTitulo:lighten(#15a,10%);
+
+@keyframes iluminar {
+    from {
+      @include coloresTexto($colorTexto,$colorFondo);
+    }
+    to {
+      @include coloresTexto($colorTextoPasando,$colorFondoPasando);
+    }
+  }
+body{
+    padding:0;
+    margin:0;
+}
+header{
+    padding: 12px 30px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: $colorTexto;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#contenido{
+  padding: 30px 20px;
+  @include responsive(medium){
+    padding: 10px 20px;
+  }
+}
+
+.col-left{
+  @include box-sizing(border-box);
+  width: 30%;
+  float: left;
+  padding: 10px;
+  @include responsive(small){
+      float:none;
+      width: 100%;
+    }
+  
+}
+
+
+.login input{
+  @extend %input-block;
+}
+.button-action{
+  @extend %button-block;
+  color: #eee;
+  background-color: lighten($colorFondo,20%);
+}
+
+.col-right{
+  @include box-sizing(border-box);
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+  @include responsive(small){
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+.col-right >h1{
+  color:$colorTitulo;
+  font-size: 1.6em;
+}
+
+li.categoria > a {
+    @include transiciones(padding,0.4s);
+   
+}
+
+  ul.submenu {
+    @include transiciones(height,0.5s);
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+  }
+  nav a:hover {
+    @include coloresTexto($colorTextoPasando,$colorFondoPasando);
+    @include animaciones(iluminar,0.4s);
+  }
+
+
+
+footer {
+        @include coloresTexto($colorTexto,$colorFondo);
+        @include box-sizing(border-box);
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        padding: 5px;
+}
+       

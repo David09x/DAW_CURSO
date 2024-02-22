@@ -1,0 +1,92 @@
+@import "_menu.scss";
+$colorTexto: #eee;
+$colorTextoPasando: #fff;
+$colorFondo: #666;
+$colorFondoPasando: #888;
+
+
+
+
+@mixin box-sizing($caja) {
+  -webkit-box-sizing: $caja;
+  -moz-box-sizing: $caja;
+  box-sizing: $caja;
+
+}
+
+@mixin animaciones($name, $duration, $timing: linear) {
+  -moz-transition: $name $duration $timing;
+  -webkit-transition: $name duration $timing;
+  animation: $name $duration $timing;
+}
+
+
+@mixin transiciones($property, $duration, $timing: linear) {
+  -moz-transition: $property $duration $timing;
+  -webkit-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
+@mixin colores($color1, $color2) {
+  color: $color1;
+  background-color: $color2;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes iluminar {
+  from {
+    @include colores($colorTexto, $colorFondo);
+
+  }
+
+  to {
+    @include colores($colorTextoPasando, $colorFondoPasando);
+
+  }
+}
+header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  @include colores(#444, $colorTexto);
+  color: #444;
+  background-color: $colorTexto;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+li.categoria>a {
+  @include transiciones(padding, 0.4s);
+
+}
+
+ul.submenu {
+  @include transiciones(height, 0.5s);
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+}
+
+nav a:hover {
+  @include colores($colorTextoPasando, $colorFondoPasando);
+
+  @include animaciones(iluminar, 0.4s);
+}
+
+
+
+footer {
+  @include colores($colorTexto, $colorFondo);
+
+
+  @include box-sizing(border-box);
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}
