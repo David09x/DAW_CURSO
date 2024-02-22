@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos>
+    <coche>
+        <marca>aston martin</marca>
+        <modelo>WGT23</modelo>
+        <motor>WT23</motor>
+        <matricula>AE-2349-SRD</matricula>
+        <kilometros>0</kilometros>
+        <precio_original>105.000</precio_original>
+        <precio_oferta>77.000</precio_oferta>
+        <extras></extras>
+        <fotos></fotos>
+    </coche>
+      <coche>
+        <marca>citroen</marca>
+        <modelo>f24</modelo>
+        <motor>3CV</motor>
+        <matricula>AS-5479-MJD</matricula>
+        <kilometros>130.000</kilometros>
+        <precio_original>23.000</precio_original>
+        <precio_oferta>15.000</precio_oferta>
+        <extras>
+            <extra>asientos deportivos</extra>
+        </extras>
+        <fotos></fotos>
+    </coche>
+</vehiculos>

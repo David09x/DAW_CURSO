@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mostrar"></div>
+    <script>
+        let array =
+            [
+                {
+                    "nom": "Joan",
+                    "cognoms": "Fuster Marí",
+                    "edat": 23,
+                    "poblacio": "Tavernes",
+                },
+                {
+                    "nom": "Pepa",
+                    "cognoms": "Ortolà Faus",
+                    "poblacio": "Cullera",
+                },
+                {
+                    "nom": "Alfred",
+                    "edat": 26,
+                    "poblacio": "Gandia",
+                },
+                {
+                    nom: "Rosa",
+                },
+            ];
+
+        function tablaMostar(array) {
+
+            let tabla = "<table style = 'width: 100%'><tr>"
+
+            let cabecera = [ "nom", "cognoms", "edat", "poblacio"];
+
+            for (const element of cabecera) {
+                tabla += "<th>" + element + "</th>";
+            }
+            tabla += "</tr>";
+
+          for (let index = 0; index < array.length; index++) {
+            tabla += "<tr>";
+            for (let key of cabecera) {
+                if (key in array[index]) {
+                   tabla += "<td>" + array[index][key] + "</td>"
+                }else{
+                    tabla += "<td></td>";
+                }
+            }
+            tabla += "</tr>";
+          }
+
+            tabla += "</tr></table>";
+
+            return tabla;
+        }
+
+        let mostrar = tablaMostar(array);
+        document.getElementById("mostrar").innerHTML = mostrar;
+    </script>
+
+</body>
+
+</html>

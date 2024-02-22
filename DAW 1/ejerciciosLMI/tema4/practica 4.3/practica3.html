@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+</head>
+
+<body>
+   
+    
+    <script>
+let array= 
+[
+ {
+    "nom": "Joan",
+    "cognoms": "Fuster Marí",
+    "edat": 23,
+    "poblacio": "Tavernes",
+ },
+ {
+    "nom": "Pepa",
+    "cognoms": "Ortolà Faus",
+    "poblacio": "Cullera",
+ },
+ {
+    "nom": "Alfred",
+    "edat": 26,
+    "poblacio": "Gandia",
+ },
+ {
+    nom: "Rosa",
+ },
+];
+
+function recorrer(Array){
+
+    for(let nombre of Array){
+        console.log(nombre)
+    }
+
+}
+
+function recorrer2(Array){
+
+    for(let i = 0 ; i < Array.length ;i++){
+        console.log(Array[i]);
+    }
+}
+
+function recorrer3(Array){
+
+    let SIU = false;
+    while(!SIU){
+
+        for(let nombre of Array){
+            console.log(nombre)
+        }
+        SIU = true;
+    }
+}
+
+function ponerTablas(array){
+
+    const table = '<table style="width: 100%"><tr><th>Nombre</th><th>Apellidos</th><th>Edad</th><th>Poblacio</th></tr>{{content}}</table>';
+
+    let content = "";
+    for(const element of array){    
+    content = `${content}<tr><td>${element.nom ?? ""}</td><td>${element.cognoms ?? ""}</td>
+                <td>${element.edat ?? ""}</td>
+                <td>${element.poblacio ?? ""}</td></tr>`;
+        
+   
+    }
+    return table.replace("{{content}}",content);
+}
+
+//recorrer(Array);
+//recorrer2(Array);
+//recorrer3(Array);
+document.body.innerHTML = ponerTablas(array);
+    </script>
+
+</body>
+</html>
+
+
+
+

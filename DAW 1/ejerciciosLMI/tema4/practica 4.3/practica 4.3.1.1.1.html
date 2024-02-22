@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mostrar"></div>
+    <script>
+        let array =
+            [
+                {
+                    "nom": "Joan",
+                    "cognoms": "Fuster Marí",
+                    "edat": 23,
+                    "poblacio": "Tavernes",
+                },
+                {
+                    "nom": "Pepa",
+                    "cognoms": "Ortolà Faus",
+                    "poblacio": "Cullera",
+                },
+                {
+                    "nom": "Alfred",
+                    "edat": 26,
+                    "poblacio": "Gandia",
+                },
+                {
+                    nom: "Rosa",
+                },
+            ]
+
+        function tablaMostar(array) {
+
+            let tabla = "<table style = 'width: 100%'><tr>"
+
+            let cabecera   = ["nom", "cognoms", "edat", "poblacio"];
+            
+            
+            //let cabeceras = Object.keys(array[0])
+            for (const element of cabecera) {
+                tabla += "<th>" + element + "</th>";
+            }
+            tabla += "</tr>";
+
+            for (const element of array) {
+                tabla += "<tr>";
+                if (element.nom != undefined) {
+                    tabla += "<td>" + element.nom + "</td>";
+                }else{
+                    tabla += "<td>no me distes tu edad</td>";
+                }
+                if(element.cognoms != undefined){
+                   tabla += "<td>" + element.cognoms + "</td>";
+                }else{
+                    tabla += "<td>no me distes tu apellido</td>";
+                }
+                if(element.edat != undefined) {
+                   tabla += "<td>" + element.edat + "</td>";
+                }else{
+                    tabla += "<td>no me distes la edad</td>";
+                }
+                if(element.poblacio != undefined){
+                    tabla += "<td>" + element.poblacio + "</td>";
+                }else{
+                    tabla += "<td>no me distes tu poblacion</td>";
+                }
+                tabla += "</tr>"
+                    
+            }
+           /*for (let element3 of array) {
+                tabla += "<tr>";
+                for (let element4 in cabecera) {
+                    let valor = element3[cabecera[element4]]
+                    if (valor != undefined) {
+                        tabla += "<td>" + valor + "</td>";
+                    } else {
+                        tabla += "<td></td>";
+                    }
+                }
+                tabla += "</tr>";
+            }*/
+
+            tabla += "</table>";
+
+            return tabla;
+        }
+
+        let mostrar = tablaMostar(array);
+        document.getElementById("mostrar").innerHTML = mostrar;
+
+    </script>
+</body>
+
+</html>

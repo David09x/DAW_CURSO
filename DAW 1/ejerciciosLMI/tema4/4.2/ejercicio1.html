@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="formulari_basic">
+        <label>Dime tu edad</label>
+        <input id="persona" name="missatge" type="text" size="60"> <br>
+        <button onclick="myFunction()" type="button">dale</button> <br>
+        <br>
+        <p id="prueba"></p>
+        <br>
+        <h3>numeros para operaciones</h3>
+        <input id="numero1" name="missatge" type="text" size="60"> <br>
+        <br>
+        <input id="numero2" name="missatge" type="text" size="60"> <br>
+        <br>
+        <input id="numero3" name="missatge" type="text" size="60"> <br>
+        <button onclick="suma()" type="button">Suma</button>
+        <button onclick="resta()" type="button">Resta</button>
+        <button onclick="multiplicacion()" type="button">multiplicacion</button>
+        <button onclick="division()" type="button">division</button>
+        <button onclick="operacion1()" type="button">operacion1</button>
+        <br>
+        <p id="prueba1"></p>
+        <br>
+        <h3>concatenar</h3>
+        <input id="palabra1" name="missatge" type="text" size="60"> <br>
+        <br>
+        <input id="palabra2" name="missatge" type="text" size="60"> <br>
+        <br>
+        <input id="palabra3" name="missatge" type="text" size="60"> <br>
+        <button onclick="concatenarPalabras()" type="button">operacion1</button>
+        <br>
+        <p id="prueba2"></p>
+        <br>
+        <h3>masa corporal</h3>
+        <label>peso</label> <br>
+        <input id="peso" name="missatge" type="text" size="60"> <br>
+        <br>
+        <label>altura</label> <br>
+        <input id="metros" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="calcularMasaCorporal()" type="button">calcularMasa</button>
+        <br>
+        <p id="prueba3"></p>
+        <br>
+        <h3>PasarHorasMinutosSegundos</h3>
+        <input id="segundos" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="pasaraHorasMinutosSegundos()" type="button">operacion1</button>
+        <br>
+        <p id="prueba4"></p>
+        <br>
+        <h3>Circulo</h3>
+        <input id="radio" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="circuloPropiedades()" type="button">operacion1</button>
+        <br>
+        <p id="prueba5"></p>
+        <br>
+
+    </form>
+
+    <script>
+        function myFunction() {
+
+            let person = document.getElementById("persona").value;
+            if (person != "") {
+                document.getElementById("prueba").innerHTML =
+                    "Tu edad es " + person;
+            }
+            else {
+                document.getElementById("prueba").innerHTML =
+                    "Dime un dato correcto"
+            }
+        }
+
+        function suma() {
+
+            let numero1 = document.getElementById("numero1").value;
+            let numero2 = document.getElementById("numero2").value;
+            let resultado = parseInt(numero1) +  parseInt(numero2);
+            if (numero2 != "" || numero1 != "") {
+                document.getElementById("prueba1").innerHTML =
+                    "la suma es " + resultado;
+            }
+            else {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+
+        function resta() {
+
+            let numero1 = document.getElementById("numero1").value;
+            let numero2 = document.getElementById("numero2").value;
+            let resultado = parseInt(numero1) -  parseInt(numero2);
+            if (numero2 != "" || numero1 != "") {
+                document.getElementById("prueba1").innerHTML =
+                    "la resta es " + resultado;
+            }
+            else {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+
+        function multiplicacion() {
+
+            let numero1 = document.getElementById("numero1").value;
+            let numero2 = document.getElementById("numero2").value;
+            let resultado = parseInt(numero1) *  parseInt(numero2);
+            if (numero2 != "" || numero1 != "") {
+                document.getElementById("prueba1").innerHTML =
+                    "la multiplicacion es " + resultado;
+            }
+            else {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+
+        function division() {
+
+            let numero1 = document.getElementById("numero1").value;
+            let numero2 = document.getElementById("numero2").value;
+            let resultado = parseInt(numero1) /parseInt(numero2);
+            if (numero2 != "" || numero1 != "") {
+                document.getElementById("prueba1").innerHTML =
+                    "la division es " + resultado;
+            }
+            else {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+
+        function operacion1(){
+            
+            let numero = document.getElementById("numero1").value;
+            let numero1 = document.getElementById("numero2").value;
+            let numero2 = document.getElementById("numero3").value;
+            let resultado = (parseFloat(numero)+parseInt(numero1))/parseFloat(numero2);
+            
+            if (numero2 != "" || numero1 != "" || numero != "") {
+                document.getElementById("prueba1").innerHTML =
+                    "la operacion es " + resultado;
+            }
+            else {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+
+        function concatenarPalabras(){
+            let palabra = document.getElementById("palabra1").value;
+            let palabra1 = document.getElementById("palabra2").value;
+            let palabra2 = document.getElementById("palabra3").value;
+            let resultado  = palabra + " " +  palabra1 +" " +palabra2;
+
+            if (palabra != "" || palabra1 != "" || palabara2 != "") {
+                document.getElementById("prueba2").innerHTML =
+                    "la concatenacion es " + resultado;
+            }
+            else {
+                document.getElementById("prueba2").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+
+        function calcularMasaCorporal(){
+            let peso1 = document.getElementById("peso").value;
+            let metros1 = document.getElementById("metros").value;
+            let resultado  = parseFloat(peso1)/(parseFloat(metros1)*parseFloat(metros1));
+            if (peso != "" || metros != "") {
+                document.getElementById("prueba3").innerHTML =
+                    "el resultado es masa corporal " + resultado;
+            }
+            else {
+                document.getElementById("prueba3").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+        
+        function pasaraHorasMinutosSegundos(){
+            let segundosTotales = document.getElementById("segundos").value;
+            let horas = Math.floor(segundosTotales/3600);
+            horas = (horas < 10)? '0' + horas : horas;
+            let minutos = Math.floor((segundosTotales/60)%60);
+            minutos = (minutos < 10)? '0' + minutos : minutos;
+            let segundos = Math.floor(segundosTotales%60);
+            segundos = (segundos < 10)? '0' + segundos : segundos;
+            if (horas != "" || minutos != "" || segundos != "") {
+                document.getElementById("prueba4").innerHTML =
+                    "hora total " + horas + ":" + minutos + ":" + segundos;
+            }
+            else {
+                document.getElementById("prueba4").innerHTML =
+                    "Dime unos datos correcto"
+            }
+        }
+
+        function circuloPropiedades(){
+            let radioDado = document.getElementById("radio").value;
+            let longitud = 2*radioDado*Math.PI;
+            let diametro = longitud/Math.PI;
+            let area = Math.PI*Math.pow(radioDado,2);
+            if (longitud != "" || diametro != "" || area != "") {
+                document.getElementById("prueba5").innerHTML =
+                    "longitud total " + longitud + " el diametro es " + diametro + " area total es " + area;
+            }
+            else {
+                document.getElementById("prueba5").innerHTML =
+                    "Dime unos datos correcto"
+            }
+
+        }
+        
+    </script>
+
+</body>
+
+</html>

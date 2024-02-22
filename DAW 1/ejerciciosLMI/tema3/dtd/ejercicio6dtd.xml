@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda [
+<!ELEMENT tienda (departamentos,productos)>
+    <!ELEMENT departamentos (departamento*)>
+        <!ELEMENT departamento (nombre)>
+            <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT productos (producto*)>
+        <!ELEMENT producto (nombre,precio)>
+            <!ELEMENT precio (#PCDATA)>
+<!ATTLIST  departamento  id ID #REQUIRED>
+<!ATTLIST producto id ID #REQUIRED>
+<!ATTLIST  producto  idDepartamento IDREF #REQUIRED>
+<!ATTLIST  precio  moneda  NMTOKEN #IMPLIED>
+<!ATTLIST  precio  descuento (si|no) "no">
+<!ATTLIST  departamento  comentario  CDATA #IMPLIED>
+<!ATTLIST  producto comentario  CDATA #IMPLIED>
+]>
+
+<tienda>
+    <departamentos>
+        <departamento id="d01">
+            <nombre>Zapatillas</nombre>
+        </departamento>
+        <departamento id="d02" comentario="sin encargado">
+            <nombre>Guantes</nombre>
+        </departamento>
+    </departamentos>
+    <productos>
+        <producto id="p0015" idDepartamento="d01">
+            <nombre>Zapatillas Trekking</nombre>
+            <precio moneda="euros" descuento="si">30</precio>
+        </producto>
+        <producto id="p0016" idDepartamento="d01">
+            <nombre>Zapatillas Basquet</nombre>
+            <precio moneda="pesetas" descuento="si">25</precio>
+        </producto>
+        <producto id="p0045" idDepartamento="d02" comentario="sin stock">
+            <nombre>Guantes esquí</nombre>
+            <precio>16</precio>
+        </producto>
+    </productos>
+    </tienda>

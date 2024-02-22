@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function myFunction() {
+            let person = prompt("Please enter your name");
+            if (person != null) {
+                document.getElementById("prueba1").innerHTML =
+                    "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
+
+    <h2>preguntar nombre</h2>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="prueba1"></p>
+</body>
+
+</html>

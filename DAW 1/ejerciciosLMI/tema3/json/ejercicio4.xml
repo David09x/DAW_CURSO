@@ -1,0 +1,31 @@
+<?xml version="1.0"  encoding="UTF-8" ?>
+<students>
+    <student>
+        <name>John</name>
+        <age>22</age>
+        <hobby>
+            <reading>True</reading>
+            <gaming>false</gaming>
+            <sport>football</sport>
+        </hobby>
+        <classes>
+            <class>Javascript</class>
+            <class>HTML</class>
+            <class>css</class>
+        </classes>
+    </student>
+    
+    <student>
+        <name>Jennifer</name>
+        <age>25</age>
+        <hobby>
+            <reading>true</reading>
+            <gaming>false</gaming>
+            <sport>tennis</sport>
+        </hobby>
+        <classes>
+            <class>xml</class>
+            <class>Python</class>
+        </classes>
+    </student>
+</students>

@@ -1,0 +1,25 @@
+{"Empleats" :[
+{
+"id": 122,
+"Nom": "Pep Oltra",
+"Temporal": false,
+"Adreça": {
+	"Carrer": "De la Pau",
+	"Població":"Tavernes de la Valldigna",
+	"CP": 45677},
+
+"Telèfons": [9988664422,
+	     1234567890]
+},{
+"id": 134,
+"Nom": "Marta Blasco",
+"Temporal": true,
+"Adreça": {
+	"Carrer": "Major",
+	"Població":"Oliva",
+	"CP": 45543},
+
+"Telèfons": [959887764,
+	     667112233]
+}
+]}

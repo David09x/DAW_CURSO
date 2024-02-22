@@ -1,0 +1,20 @@
+---
+users:
+  - id: 1
+    first_name: Jeanette
+    last_name: Penndreth
+    email: jpenddreth0@census.gov
+    gender: Female
+    ip_adress: 26.58.139.2
+  - id: 2
+    first_name: Giavani
+    last_name: Frediani
+    email: gfrediani1@senate.gov
+    gender: Male
+    ip_adress: 229.179.4.212
+  - id: 3
+    first_name: Noell
+    last_name: Bea
+    email: nbea2@imageshack.us
+    gender: Female
+    ip_adress: 180.66.162.255

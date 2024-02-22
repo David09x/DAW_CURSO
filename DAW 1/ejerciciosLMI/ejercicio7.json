@@ -1,0 +1,26 @@
+{"deserts" :[
+{"id" : 1,
+ "type" : "ice cream",
+ "name" : "vainilla core",
+ "image" : {
+	 "col" : "img101.png",
+	 "width": 20,
+	 "height" : 200},
+ "thumbnail" :{
+	 "col": "images/thumbail101.png",
+	 "width": 32,
+	 "height": 32}
+},{
+"id" : 3,
+ "type" : "cupcake",
+ "name" : "Banana Split Cupcake",
+ "image" : {
+	 "col" : "img/banana.png",
+	 "width": 300,
+	 "height" : 400},
+ "thumbnail" :{
+	 "col": "images/thumbnails/banana.png",
+	 "width": 32,
+	 "height": 32}
+}
+]}

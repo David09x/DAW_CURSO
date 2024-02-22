@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mostrar"></div>
+    <script>
+        let array =
+            [
+                {
+                    "nom": "Joan",
+                    "cognoms": "Fuster Marí",
+                    "edat": 23,
+                    "poblacio": "Tavernes",
+                },
+                {
+                    "nom": "Pepa",
+                    "cognoms": "Ortolà Faus",
+                    "poblacio": "Cullera",
+                },
+                {
+                    "nom": "Alfred",
+                    "edat": 26,
+                    "poblacio": "Gandia",
+                },
+                {
+                    nom: "Rosa",
+                },
+            ]
+
+            function tablaMostrar(array){
+                let lista = "<ul>";
+                
+                let cabecera   = ["nom", "cognoms", "edat", "poblacio"];
+                
+                for(const element  of cabecera){
+                    lista+= "<li>" + element;
+                    lista += "<ul>";
+                    for(const element2 of array ){
+                        if(element in element2){
+                            lista += "<li>"+ element2[element] + "</li>";
+                        }else{
+                            lista += "<li>" + "no introdujo datos" + "</li>"
+                        }
+                    }
+                    lista += "</ul></li>"; 
+                }
+
+                lista+="</ul>";
+
+                return lista;
+
+            }
+
+            let mostrar = tablaMostrar(array);
+        document.getElementById("mostrar").innerHTML = mostrar;
+        </script>
+        
+    
+</body>
+</html>

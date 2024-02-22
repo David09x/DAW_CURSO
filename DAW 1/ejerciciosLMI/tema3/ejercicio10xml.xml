@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<discos>
+    <disco>
+        <nombre>Flowers</nombre>
+        <grupo>the rolling stones</grupo>
+        <canciones>
+            <cancion numero ="1">
+            <titulo>ruby tuesday</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>3.15</duracion>
+            </cancion>
+            <cancion numero ="2">
+            <titulo>have you seen your mother, baby, standing in the shadow</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>2.33</duracion>
+            </cancion>
+            <cancion numero ="3">
+            <titulo>let`s spend the night together</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>3.36</duracion>
+            </cancion>
+            <cancion numero ="4">
+            <titulo>lady jane</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>3.06</duracion>
+            </cancion>
+            <cancion numero ="5">
+            <titulo>out of time</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>3.42 minutos</duracion>
+            </cancion>
+            <cancion numero ="6">
+            <titulo>my girl</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>2.38</duracion>
+            </cancion>
+            <cancion numero ="7">
+            <titulo>back street girl</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>3.26</duracion>
+            </cancion>
+            <cancion numero ="8">
+            <titulo>please go home</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>3.16</duracion>
+            </cancion>
+            <cancion numero ="9">
+            <titulo>mother little helper</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>2.42</duracion>
+            </cancion>
+            <cancion numero ="10">
+            <titulo>take it or leave it</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>2.46</duracion>
+            </cancion>
+            <cancion numero ="11">
+            <titulo>ride on baby</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>2.53</duracion>
+            </cancion>
+            <cancion numero ="12">
+            <titulo>sitting on a fence</titulo>
+            <autores>
+                <autor>Jagger Richards</autor>
+            </autores>
+            <duracion>3.02</duracion>
+            </cancion> 
+        </canciones>
+    </disco>
+</discos>

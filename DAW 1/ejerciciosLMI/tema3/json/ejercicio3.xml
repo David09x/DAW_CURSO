@@ -1,0 +1,17 @@
+<?xml version="1.0"  encoding="UTF-8" ?>
+<users>
+    <user id="1">
+        <first_name>Jaenette</first_name>
+        <second_name>Pendreth</second_name>
+        <email>Jpendreth@cesus.gov</email>
+        <gender>female</gender>
+    </user>
+    
+    <user id="2">
+        <first_name>Giovanni</first_name>
+        <second_name>Fediani</second_name>
+        <email>gfrediani1@senate.gov</email>
+        <gender>male</gender>
+        <ip_address>229.179.4.212</ip_address>
+    </user>
+</users>

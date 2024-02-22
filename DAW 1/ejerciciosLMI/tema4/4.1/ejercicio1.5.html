@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name="formulari_basic">
+            <label>prueba</label>
+            <input id="persona" name="missatge" type="text" size="60"> <br>
+            <button  onclick="myFunction()" type="button">dale hulio</button>
+        </form>
+
+        <script>
+            function myFunction() {
+                let person = document.getElementById("persona").value;
+                    document.getElementById("prueba").innerHTML =
+                        "Hello " + person + "! How are you today?";
+            }
+        </script>
+
+        <p id="prueba"></p>
+    </body>
+</html>
+
+

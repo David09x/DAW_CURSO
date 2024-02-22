@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="formulario">
+        <h3>par o impar</h3>
+        <input id="numeroDado" name="missatge" type="text" size="60"> <br>
+        <button onclick="parOimpar()" type="button">dale</button> <br>
+        <br>
+        <p id="prueba"></p>
+        <br>
+        <h3>mayor, menor o igual</h3>
+        <input id="numeroDado1" name="missatge" type="text" size="60"> <br>
+        <br>
+        <input id="numeroDado2" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="mayorOmenor()" type="button">dale</button> <br>
+        <br>
+        <p id="prueba1"></p>
+        <br>
+        <h3>usuarioyedad</h3>
+        <label>usuario</label>
+        <br>
+        <input id="usuario1" name="missatge" type="text" size="60"> <br>
+        <br>
+        <label>edad</label>
+        <br>
+        <input id="edad1" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="usuarioYedad()" type="button">dale</button> <br>
+        <br>
+        <p id="prueba2"></p>
+        <br>
+        <h3>PalabraIguales</h3>
+        <br>
+        <label>palabra1</label>
+        <br>
+        <input id="palabra1" name="missatge" type="text" size="60"> <br>
+        <br>
+        <label>palabra2</label>
+        <br>
+        <input id="palabra2" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="palabrasIguales()" type="button">dale</button>
+        <button onclick="palabrasIguales2()" type="button">dale1</button> <br>
+        <br>
+        <p id="prueba3"></p>
+        <br>
+        <h3>IMC</h3>
+        <br>
+        <label>Altura</label>
+        <br>
+        <input id="altura" name="missatge" type="text" size="60"> <br>
+        <br>
+        <label>peso</label>
+        <br>
+        <input id="peso" name="missatge" type="text" size="60"> <br>
+        <br>
+        <label>anchura</label>
+        <br>
+        <input id="anchura" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="imc()" type="button">dale</button> <br>
+        <br>
+        <p id="prueba4"></p>
+        <h3>Dias</h3>
+        <br>
+        <label>diaDelaSemana</label>
+        <br>
+        <input id="diaSem" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="dia()" type="button">dale</button> <br>
+        <br>
+        <p id="prueba5"></p>
+        <br>
+        <h3>MesesdelaAÑO</h3>
+        <br>
+        <label>Mes</label>
+        <br>
+        <input id="mes" name="missatge" type="text" size="60"> <br>
+        <br>
+        <button onclick="meses()" type="button">dale</button> <br>
+        <br>
+        <p id="prueba6"></p>
+        
+    </form>
+    <script>
+        function parOimpar() {
+
+            let numero = document.getElementById("numeroDado").value;
+
+            if (numero == "") {
+                document.getElementById("prueba").innerHTML =
+                    "Dime un dato correcto";
+                return
+            }
+            if (!isNaN(numero)) {
+                if (parseInt(numero) % 2 != 0) {
+                    document.getElementById("prueba").innerHTML =
+                        "es impar ";
+
+                } else {
+                    document.getElementById("prueba").innerHTML =
+                        "es par ";
+
+                }
+            } else {
+                document.getElementById("prueba").innerHTML =
+                    "Dime un numero"
+            }
+        }
+
+        function mayorOmenor() {
+
+            let numero = document.getElementById("numeroDado1").value;
+            let numero2 = document.getElementById("numeroDado2").value;
+
+            if (numero == "" || numero2 == "") {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime un dato correcto";
+                return
+            }
+            if (isNaN(numero) || isNaN(numero2)) {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime un numero";
+                    return;
+            }
+
+            if (parseInt(numero) > parseInt(numero2)) {
+                    document.getElementById("prueba1").innerHTML =
+                        "el numero mayor es " + numero;
+                        return;
+
+            } 
+            if (parseInt(numero) < parseInt(numero2)) {
+                document.getElementById("prueba1").innerHTML =
+                    "el numero mayor es " + numero2;
+                    return;
+
+            } 
+           
+            document.getElementById("prueba1").innerHTML =
+            "son iguales ";
+                    
+        }
+
+        function mayorOmenor() {
+
+            let numero = document.getElementById("numeroDado1").value;
+            let numero2 = document.getElementById("numeroDado2").value;
+
+            if (numero == "" || numero2 == "") {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime un dato correcto";
+                return
+            }
+            if (!isNaN(numero) || !isNaN(numero2)) {
+                if (parseInt(numero) > parseInt(numero2)) {
+                    document.getElementById("prueba1").innerHTML =
+                        "el numero mayor es " + numero;
+
+
+                } else if (parseInt(numero) < parseInt(numero2)) {
+                    document.getElementById("prueba1").innerHTML =
+                        "el numero mayor es " + numero2;
+
+                } else {
+                    document.getElementById("prueba1").innerHTML =
+                        "son iguales ";
+                }
+            } else {
+                document.getElementById("prueba1").innerHTML =
+                    "Dime un numero"
+            }
+        }
+
+        function usuarioYedad() {
+
+            let usuario = document.getElementById("usuario1").value;
+            let edad = document.getElementById("edad1").value;
+
+            if (usuario == "" || edad == "") {
+                document.getElementById("prueba2").innerHTML =
+                    "Dime un dato correcto";
+                return
+            }
+            if (!isNaN(edad)) {
+                if (parseInt(edad) > 0 && parseInt(edad) < 120) {
+                    document.getElementById("prueba2").innerHTML =
+                        "el nombre de ususario es " + usuario + " y la edad es de " + edad;
+                    return
+                }
+                else {
+                    document.getElementById("prueba2").innerHTML =
+                        "Dime una edad correcta que sea mayor que 0 y menor que 120";
+                    return
+                }
+            } else {
+                document.getElementById("prueba2").innerHTML =
+                    "Dime un numero"
+                return
+            }
+        }
+
+        function palabrasIguales() {
+
+            let palabra = document.getElementById("palabra1").value;
+            let palabra1 = document.getElementById("palabra2").value;
+
+            if (palabra == "" || palabra1 == "") {
+                document.getElementById("prueba3").innerHTML =
+                    "Dime un dato correcto";
+                r
+            } else if (palabra == palabra1) {
+
+                document.getElementById("prueba3").innerHTML =
+                    "son exactamente iguales";
+                return
+            } else if (palabra != palabra1) {
+
+                document.getElementById("prueba3").innerHTML =
+                    "no son exactamente iguales";
+                return
+
+            } else {
+                document.getElementById("prueba3").innerHTML =
+                    "Dime un numero"
+                return
+            }
+        }
+
+        function palabrasIguales2() {
+
+            let palabra = document.getElementById("palabra1").value;
+            let palabra1 = document.getElementById("palabra2").value;
+
+            if (palabra == "" || palabra1 == "") {
+                document.getElementById("prueba3").innerHTML =
+                    "Dime un dato correcto";
+            } else if (palabra.toLowerCase() == palabra1.toLowerCase()) {
+
+                document.getElementById("prueba3").innerHTML =
+                    "son iguales";
+                return
+            } else if (palabra.toLowerCase() != palabra1.toLowerCase()) {
+
+                document.getElementById("prueba3").innerHTML =
+                    "no son";
+                return
+
+            } else {
+                document.getElementById("prueba3").innerHTML =
+                    "Dime un numero"
+                return
+            }
+        }
+
+        function imc() {
+
+            let peso = document.getElementById("peso").value;
+            let altura = document.getElementById("altura").value;
+            let anchura = document.getElementById("anchura").value;
+            let resultado = parseFloat(peso) / (parseFloat(altura) * parseFloat(anchura));
+
+            if (peso == "" || altura == "" || anchura == "") {
+                document.getElementById("prueba4").innerHTML =
+                    "Dime un dato correcto";
+               
+            } else if (parseFloat(resultado) < 18.5) {
+                document.getElementById("prueba4").innerHTML =
+                    "bajo peso";
+                return
+            } else if (parseFloat(resultado) >= 18.5 && parseFloat(resultado) < 25.5) {
+                document.getElementById("prueba4").innerHTML =
+                    "normal";
+                return
+            } else if (parseFloat(resultado) >= 25.5 && parseFloat(resultado) < 30) {
+                document.getElementById("prueba4").innerHTML =
+                    "sobrepeso";
+                return
+            } else if (parseFloat(resultado) >= 30) {
+                document.getElementById("prueba4").innerHTML =
+                    "obes";
+                return
+            }
+            else {
+                document.getElementById("prueba4").innerHTML =
+                    "Dime un numero"
+                return
+            }
+        }
+
+        function dia() {
+
+            let numero = document.getElementById("diaSem").value;
+
+            if (numero == "") {
+                document.getElementById("prueb5").innerHTML =
+                    "Dime un dato correcto";
+                return
+            }
+            if (!isNaN(numero)) {
+                switch (parseInt(numero)) {
+                    case 1:
+                        document.getElementById("prueba5").innerHTML =
+                            "Lunes";
+                        break;
+                    case 2:
+                        document.getElementById("prueba5").innerHTML =
+                            "Martes";
+                        break;
+                    case 3:
+                        document.getElementById("prueba5").innerHTML =
+                            "Miercoles";
+                        break;
+                    case 4:
+                        document.getElementById("prueba5").innerHTML =
+                            "Jueves";
+                        break;
+                    case 5:
+                        document.getElementById("prueba5").innerHTML =
+                            "Viernes";
+                        break;
+                    case 6:
+                        document.getElementById("prueba5").innerHTML =
+                            "Sabado";
+                        break;
+                    case 7:
+                        document.getElementById("prueba5").innerHTML =
+                            "Domingo";
+                        break;
+                    default:
+                        document.getElementById("prueba5").innerHTML =
+                            "no has dado un dato correcto jejejej espabila y da uno";
+                        break;
+                }
+            } else {
+                document.getElementById("prueba5").innerHTML =
+                    "Dime un numero"
+            }
+        }
+
+        function meses() {
+
+            let numero = document.getElementById("mes").value;
+
+            if (numero == "") {
+                document.getElementById("prueba6").innerHTML =
+                    "Dime un dato correcto";
+                return
+            }
+            if (!isNaN(numero)) {
+                switch (parseInt(numero)) {
+                    case 1:
+                        document.getElementById("prueba6").innerHTML =
+                            "Enero";
+                        break;
+                    case 2:
+                        document.getElementById("prueba6").innerHTML =
+                            "Febrero";
+                        break;
+                    case 3:
+                        document.getElementById("prueba6").innerHTML =
+                            "Marzo";
+                        break;
+                    case 4:
+                        document.getElementById("prueba6").innerHTML =
+                            "Abril";
+                        break;
+                    case 5:
+                        document.getElementById("prueba6").innerHTML =
+                            "Mayo";
+                        break;
+                    case 6:
+                        document.getElementById("prueba6").innerHTML =
+                            "Julio";
+                        break;
+                    case 7:
+                        document.getElementById("prueba6").innerHTML =
+                            "Junio";
+                        break;
+                    case 8:
+                        document.getElementById("prueba6").innerHTML =
+                            "Agosto";
+                        break;
+                    case 9:
+                        document.getElementById("prueba6").innerHTML =
+                            "Septiembre";
+                        break;
+                    case 10:
+                        document.getElementById("prueba6").innerHTML =
+                            "Octubre";
+                        break;
+                    case 11:
+                        document.getElementById("prueba6").innerHTML =
+                            "Noviembre";
+                        break;
+                    case 12:
+                        document.getElementById("prueba6").innerHTML =
+                            "Diciembre";
+                        break;
+                    default:
+                        document.getElementById("prueba6").innerHTML =
+                            "no has dado un dato correcto jejejej espabila y da uno";
+                        break;
+                }
+            } else {
+                document.getElementById("prueba6").innerHTML =
+                    "Dime un numero"
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

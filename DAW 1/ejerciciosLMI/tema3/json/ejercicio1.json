@@ -1,0 +1,39 @@
+{
+    "tienda" : {
+        "departamentos" : {
+            "departamento" : [{
+                "id" : "d01",
+                "nombre": "zapatillas" 
+            },
+            {
+                "id" : "d02",
+                "nombre": "guantes"
+            }],
+            "productos" : [
+                {
+                "idDepartamento" : "d01",
+                "nombre" : "zapatillas Treanking",
+                "precio" : {
+                    "moneda" : "euros",
+                    "decuento" : "si",
+                    "precio": 30
+                }
+            },
+            {
+                "idDepartamento" : "d01",
+                "nombre" : "zapatillas basket",
+                "precio" : {
+                    "moneda" : "pesetas",
+                    "decuento" : "si",
+                    "precio": 25
+                }
+            },
+            {
+                "idDepartamento" : "d02",
+                "nombre" : "guantes sky",
+                "precio" : 16
+            }
+        ]
+        }
+    }
+}

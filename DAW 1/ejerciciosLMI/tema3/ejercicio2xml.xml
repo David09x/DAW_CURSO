@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cliente>
+    <nombre>Juan</nombre>
+    <apellidos>Delgado Martinez</apellidos>
+    <producto codigo="A2023">bicicleta</producto>
+    <direccion_entrega>
+        <direccion>Calle Barco 4</direccion>
+        <piso>tercero</piso>
+        <puerta>A</puerta>
+    </direccion_entrega>
+    <fecha_entrega>
+        <dia>19</dia>
+        <mes>05</mes>
+        <anyo>2000</anyo>
+    </fecha_entrega>
+</cliente>

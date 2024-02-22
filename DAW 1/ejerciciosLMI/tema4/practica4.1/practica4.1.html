@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formulario">
+        <fieldset>
+            <h1>Formulario de registro</h1>
+            <label for="">nombre</label>
+            <input type="text" name="nombre" id="nombre"><span id="prueba"></span><br>
+            <br>
+            <label for="">apellidos</label>
+            <input type="text" name="apellido" id="apellidos"><br>
+            <br>
+            <label for="">edad</label>
+            <input type="text" name="edad" id="edad"><span id="edadMala"></span><br>
+            <br>
+            <label for="">fecha de nacimiento</label>
+            <input type="text" name="fecha" id="fecha"><span id="fecha1"></span><br>
+            <br>
+            <label for="">DNI</label>
+            <input type="text" name="dni" id="dni"><span id="dni1"></span><br>
+            <br>
+            <label for="">email</label>
+            <input type="text" name="email" id="email"><span id="prueba1"></span><br>
+            <br>
+            <label for="">telefono</label>
+            <input type="text" name="telefono" id="telefono"><span id="prueba2"></span><br>
+            <br>
+            <br>
+            <label for="">CAPTCHA cuanto es el valor de <span id="aleatorio1"></span> + <span
+                    id="aleatorio2"></span></label>
+            <input type="text" name="captchas" id="captcha"><span id="prueba3"></span><br>
+            <br>
+            <button onclick="formularioCompletar()" type="button">enviar</button>
+        </fieldset>
+    </form>
+
+    <script>
+        document.getElementById("aleatorio1").innerHTML = numeroRandom(9,2);
+        document.getElementById("aleatorio2").innerHTML = numeroRandom(9,2);
+        function numeroRandom(max,min) {return Math.floor(Math.random() * (max+1 - min)) + min;}
+        function formularioCompletar() {
+            let regexDNI = /^(\d{7,8})([a-zA-Z])$/g;
+            let regexFecha =  /([0-2][0-9]|3[0-1])(-)(0[1-9]|1[0-2])\2(\d{4})/g;
+            let regexEmail = /[a-zA-Z0-9.\_]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+/g;
+            let regexTelefono = /(\+34|\(\+34\)|\(34\))([0-9]| [0-9]){9}/g;
+            let acierto = true;
+            let nombrePersona = document.getElementById("nombre").value.trim();
+            let apellidosPersona = document.getElementById("apellidos").value.trim();
+            let edadPersona = document.getElementById("edad").value.trim();
+            let emailPersona = document.getElementById("email").value.trim();
+            let fechaDeNacimiento = document.getElementById("fecha").value.trim();
+            let dniPersona = document.getElementById("dni").value.trim();
+            let telefonoPersona = document.getElementById("telefono").value.trim();
+            let numero1 = document.getElementById("aleatorio1").innerHTML;
+            let numero2 = document.getElementById("aleatorio2").innerHTML;
+            let resultado = parseInt(numero1)  + parseInt(numero2);
+            let captchaResultado =  document.getElementById("captcha").value;
+            if (nombrePersona == "") {
+                document.getElementById("prueba").innerHTML =
+                    "el campo es requerido";
+                    acierto = false;
+            } else if (nombrePersona != "") {
+                document.getElementById("prueba").innerHTML =
+                    "";    
+            }
+            if(!fechaDeNacimiento.match(regexFecha)){
+                document.getElementById("fecha1").innerHTML =
+                "campo es requerido o el formato es malo dd-mm-yyyy";
+                acierto = false;
+            }else if (fechaDeNacimiento.match(regexFecha)){
+                document.getElementById("fecha1").innerHTML =
+                "";
+            }
+            if (edadPersona == "") {
+                document.getElementById("edadMala").innerHTML =
+                    "";
+            }else if(isNaN(edadPersona)) {
+                document.getElementById("edadMala").innerHTML =
+                    "introduce un numero";
+            }else if(parseInt(edadPersona) < 0 || parseInt(edadPersona) > 120) {
+                document.getElementById("edadMala").innerHTML =
+                            "la edad tiene que estar entre 0  y 120";
+            }else{
+                document.getElementById("edadMala").innerHTML =
+                    "";
+            }
+            if(!dniPersona.match(regexDNI)){
+                document.getElementById("dni1").innerHTML =
+                    "el campo es requerido o esta mal escrito";
+                    acierto = false;
+            }else if (dniPersona.match(regexDNI)){
+                document.getElementById("dni1").innerHTML =
+                    "";
+            }
+            if (!emailPersona.match(regexEmail)) {
+                document.getElementById("prueba1").innerHTML =
+                    "el campo es requerido";
+                    acierto = false;
+            } else if (emailPersona.match(regexEmail)) {
+                document.getElementById("prueba1").innerHTML =
+                    "";
+            }
+            if (!telefonoPersona.match(regexTelefono)) {
+                document.getElementById("prueba2").innerHTML =
+                    "el campo es requerido y el formato es (+34)/+34/(34) y el telefono";
+                    acierto = false;
+            } else if (telefonoPersona.match(regexTelefono)) {
+                document.getElementById("prueba2").innerHTML =
+                    "";
+            }
+            if(parseInt(resultado) != parseInt(captchaResultado)){
+                    document.getElementById("prueba3").innerHTML =
+                        "no funciona";
+            }else{
+                document.getElementById("prueba3").innerHTML =
+                        "";
+            }
+            if (acierto) {
+                alert("nombre " + nombrePersona +"\n"+ "apellidos " + apellidosPersona +
+                "\n" + "edad " + edadPersona +"\n"+"dni " + dniPersona + "\n"+"fecha de nacimiento "+fechaDeNacimiento+"\n"+ "email " + emailPersona +"\n"+ "telefono " + telefonoPersona)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+    "Ofertas": {
+        "vehiculo" : [
+            {
+                "color" : "Rojo",
+                "modelo" : "ford",
+                "motor" :{  
+                        "tipo" : "diesel",
+                        "motor" : "duradora 1.4"},
+                "matricula" : {
+                            "anyo" : "2014",
+                            "matricula" : "1234AAAA" },
+                "kilometros" : 12500,
+                "Precio_inicial" : 12000,
+                "extras" : [
+                        "llantas",
+                         "pintura metalizada"
+                        ],
+                "fotos":{
+                    "foto" : [{
+                        "tipo" : "frontal",
+                        "foto" : "11325.jpg"
+                    }]
+                    
+                }            
+            },
+            {
+                "color" : "Azul oscuro",
+                "modelo" : "ford",
+                "motor" :{  
+                        "tipo" : "gasolina",
+                        "motor" : "duradora 2.0"},
+                "matricula" : {
+                            "anyo" : "2015",
+                            "matricula" : "1235AAAA" },
+                "kilometros" : 125000,
+                "Precio_inicial" : 10000,
+                "extras" : [
+                        "spoiler trasera",
+                        "climatizador"
+                        ],
+                "fotos":{
+                    "foto" : [{
+                        "tipo" : "frontal",
+                        "foto" : "11345.jpg"
+                    }]
+                    
+                }            
+            }
+        ]
+    }
+}

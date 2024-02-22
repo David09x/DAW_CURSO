@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+  <libro>
+        <codigo>ISBN-3344</codigo>
+        <titulo>El pescadito feliz</titulo>
+        <profundidad tipo="intermedio"></profundidad>
+        <autores>
+            <autor>Jose Antonio Sanchez Martinez</autor>
+            <autor>Andrea Pereira Perez</autor>
+        </autores>
+        <editorial>Masras</editorial>
+        <fecha>24-03-2018</fecha>
+        <p.web>Ellibro.com</p.web>
+        <precio>22.99</precio>
+    </libro>
+    <libro>
+        <codigo>ISBN-3464</codigo>
+        <titulo>No metemos una ni queriendo</titulo>
+        <profundidad tipo="avanzado"></profundidad>
+        <autores>
+            <autor>Miguel Gea</autor>
+            <autor>Abhi Rudmaluva</autor>
+        </autores>
+        <editorial>El_lobo</editorial>
+        <fecha>22-07-2022</fecha>
+        <p.web>MiConsejo.com</p.web>
+        <precio>12.99</precio>
+    </libro>
+</libros>
