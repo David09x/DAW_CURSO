@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-md">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Xuso Clases</a>
+                    </li>
+                </ul>
+               <div class="btn-group ms-auto">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Informacion
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link " href="carrousel.html">Inicio</a>
+                        </li>
+                        <li class="nav-item  me-3">
+                            <a class="nav-link" href="Profesores.html">Profesores</a>
+                        </li>
+                        <li class="nav-item  me-3">
+                            <a class="nav-link" href="Actividades.html">Horarios</a>
+                        </li>
+                        <li class="nav-item me-5  me-3">
+                            <a class="nav-link" href="Form.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container border border-primary w-50 rounded mt-3" style="border-width: thick;">
+        <form>
+            <h2 style="color: blue;">Danos Información sobre ti</h2>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" >Nombre</label>
+                <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" >Apellidos</label>
+                <input type="password" class="form-control w-100" id="exampleInputPassword1">
+            </div>
+            <div>
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">C.POSTAL</label>
+                <input type="password" class="form-control w-100" id="exampleInputPassword1">
+            </div>
+            <select class="form-select mt-1" aria-label="Default select example">
+                <option selected>Disponibilidad</option>
+                <option value="1">Mañanas</option>
+                <option value="2">Mediodias</option>
+                <option value="3">Tardes</option>
+                <option value="3">Noches</option>
+              </select>
+            <div class="mb-3 form-check mt-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label " for="exampleCheck1" >Tienes alguna enfermedad</label>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tipo de Enfermedad</option>
+                <option value="1">Cardiovascular</option>
+                <option value="2">Neurologico</option>
+                <option value="3">Otro</option>
+                <option value="3">ninguno</option>
+              </select>
+
+              <select class="form-select mt-4" aria-label="Default select example">
+                <option selected>Dispinibilidad semanal</option>
+                <option value="1">Completo 100$</option>
+                <option value="2">5dias 60$</option>
+                <option value="3">3dias 40$</option>
+                <option value="3">1dia 15$</option>
+              </select>
+            <div class="mb-3 mt-1">
+                <label for="exampleFormControlTextarea1" class="form-label" style="color: white;">Dinos algo sobre ti</label>
+                <textarea class="form-control w-100" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary ">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

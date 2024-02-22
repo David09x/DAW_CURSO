@@ -1,0 +1,25 @@
+$primero: #2980b9;
+$segundo: #ffffff;
+
+@mixin estil-botons($color,$color2) {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: $color2;
+    text-decoration: none;
+    background-color: $color;
+  }
+
+.button-generic{
+  @include estil-botons($primero,$segundo);
+}
+
+.button-segon{
+  @include estil-botons($primero,$segundo);
+  background-color:#e74c3c;
+}
+
+.button-tercer{
+  @include estil-botons($primero,$segundo);
+  background-color:#060533;
+}
