@@ -1,0 +1,32 @@
+.bomba{
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-image: url("../bomba/bomba9.png");
+    background-size: cover;
+}   
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}   
+
+
+.bomba{grid-area:1/1;}
+.bomba1{grid-area: 1/3;}
+.bomba2{grid-area: 3/2;}
+
+.bomba{
+    display:block;
+    width: 100px;
+    height: 100px;
+}
+
+.bomba, .bomba1, .bomba2{
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+    border: 1px grey solid;
+}
+
