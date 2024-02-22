@@ -1,0 +1,126 @@
+header{
+    background-color: #FCF9AC;
+    width: 100%;
+    border: 2px grey solid;
+}
+
+nav{
+    border: 2px grey solid;
+    padding-left: 15px;
+    background-color: grey;
+}
+
+#textazo{
+    padding-left: 15px;
+}
+
+.izquierda{
+    background-color:#FCF9AC ;
+    width: 50%;
+    border: 2px grey solid;
+    margin-top:15px;
+    margin-left: 15px;
+}
+h2{
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 15px;
+}
+h4{
+    padding-left: 10px;
+    margin-top: 0;
+}
+#textazo2{
+    color: grey;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+#textazo1{
+    color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+#divTextazo{
+    border-bottom: 2px grey solid;
+    margin-left: 10px;
+    margin-right: 15px;
+    
+}
+
+#izquierda_dentro{
+    border: 2px grey solid;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+img{
+    width: 25%;
+    padding-left:5px;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+#parrafada{
+    margin-top: 0;
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+#textazo3{
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.izquierda2{
+    background-color:#FCF9AC ;
+    width: 50%;
+    border: 2px grey solid;
+    margin-top:15px;
+    margin-left: 15px;
+    
+}
+#textazo4{
+    color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#textazo5{
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+ 
+h4#titulo4{
+    margin-bottom: 0;
+}
+
+.derecha{
+    background-color: grey;
+    width: 40%;
+    float: right;
+    margin-top: 15px;
+    
+}
+
+#parrafazo1{
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+#parrafazo2{
+    margin-left: 25px;
+    margin-top: 0;
+}
+
+footer{
+  border-top:2px grey solid;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+#textfooter{
+    text-align: center;
+}

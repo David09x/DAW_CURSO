@@ -1,0 +1,112 @@
+#cajaGeneral{
+    border: 2px blue solid;
+    height: 205px;
+    position: relative;
+    text-align: right;
+}
+#primera{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   /* float:right;
+    position: relative;
+    bottom: -101px; */
+
+}
+#segunda{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    float:left;
+}
+#tercera{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    
+    color:white;
+    float:left;
+}
+#primera1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    float:left;
+}
+#segunda1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    float:left;
+}
+#tercera1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    float:left;
+}
+#primera2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+#segunda2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    display: inline-block;
+   
+}
+#tercera2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+#primera3{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    float:right;
+}
+#segunda3{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+    float:left;
+}
+#tercera3{
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    background-color: red;
+    color: white;
+   float:left;
+}

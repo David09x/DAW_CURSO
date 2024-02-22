@@ -1,0 +1,90 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+}
+div{
+    border: 2px solid black;
+    background-color: grey;
+    height: 90px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+#caja1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px 5px;
+}
+
+#caja2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 1px -1px 5px 2px;
+}
+
+#caja3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px ;
+}
+
+#caja4{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 6px 5px 0px 5px black;
+}
+#caja5{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 6px 5px 10px 1px;
+}
+#caja6{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 3px 3px 0px 1px; 
+}
+
+#caja7{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px 5px; 
+}
+#caja8{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: 1px -1px 5px 2px; 
+}
+#caja9{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: -5px -8px 5px 2px; 
+}
+#caja10{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: -5px -5px 0px 5px; 
+}
+#caja11{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: -6px -5px 10px 1px; 
+}
+
+#caja12{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    box-shadow: -4px -4px 0px 1px; 
+}

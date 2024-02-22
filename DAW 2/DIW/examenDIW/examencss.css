@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    height: 100%;
+    
+}
+header{
+    background-color:#353949;
+}
+header > h1{
+    margin-top: 0;
+    text-align: center;
+    color:white;
+    text-shadow: 0.5px 0.5px 0.5px red,-1px -1px 2px red;
+    font-size: 50px;
+}
+nav{
+    padding-bottom: 20px;
+    background-size: cover;
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+   
+}
+
+.uno {
+    background: url(bgimg1.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+h2{
+    margin: 0;
+}
+#unoDentro{
+
+    background-color: #e84248;
+    width: 130px;
+    color: white;
+    position: absolute;
+    top:40%;
+    left:40%;
+    padding:10px
+}
+.dos{
+    background: url(bg1.png), url(bg2.png);
+    position: relative;
+
+    background-attachment: fixed,local;
+    background-size: repeat;
+    height: 600px;
+    width: 100%;
+}
+#dosDentro{
+    
+    background-color: #17a2b8;
+    width: 280px;
+    color: white;
+    position: absolute;
+    top:40%;
+    left:40%;
+    padding: 10px;
+}
+.tres{
+    background: url(bgimg2.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+#tresDentro{
+    background-color: #e84248;
+    width: 180px;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    top:40%;
+    left:40%;
+}
+.texto1 > p{
+    padding: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.texto1 {
+    border-bottom:3px black solid ;
+}
+
+.texto2 > p{
+    padding: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.texto3 > p{
+    padding: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+footer{
+    background: #353949;
+    background-attachment: fixed;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#footer1 {
+
+    color:grey;
+    margin: 0;
+    padding-left:20px;
+    padding-top: 20px;
+}
+#footer2{
+    color:white;
+    margin: 0;
+    padding-left:20px;
+}
+
+@media (max-width: 748px) {
+    nav{
+        
+        display: grid;
+        row-gap: 20px;
+    }
+    #unoDentro{
+        font-size: 10px;
+        text-align: center;
+    }
+    #dosDentro{
+        font-size: 10px;
+        text-align: center;
+    }
+    #tresDentro{
+        font-size: 10px;
+        text-align: center;
+    }
+}

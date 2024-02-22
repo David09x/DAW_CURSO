@@ -1,0 +1,136 @@
+*{
+    margin: 0px;/*margenes*/
+    padding:0px;/*margenes interiores*/
+}
+
+body{
+    padding-top:20px;
+    text-align: center;
+    background-image: url("../imgs/old_map.png");
+  
+}
+div#page{
+    width: 960px;/*anchura*/
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+div#header{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1em;
+    border-bottom: 6px black solid;
+    background-color:  #313B44;
+
+}
+h1{
+    background-image: url("../imgs/logo.png");
+    background-repeat: no-repeat;/*que no se repita el fondo*/
+    background-position: 25px  center;/*posicion del fondo*/
+    padding: 20px 100px;
+    
+}
+div#nav{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    color:silver;
+    text-align: center;
+    background-image: url("../imgs/red015.jpg");
+    
+}
+#nav ul{
+    padding: 0;
+}
+#nav li{
+   padding-top: 80px;
+    display: inline-block;/*ponerlos en posicion horizontal*/
+    text-align: center;
+    list-style-type: none;/*eliminar el bullet*/
+    cursor: default;
+    margin: 0px 100px 20px 100px;
+      
+}
+li#contenidos{
+    background-image: url(../imgs/book.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center 10px;
+    margin-top: 10px;
+    max-width: 100%; /* Ajustar el tamaño máximo de las imágenes al ancho del elemento */
+    height: auto; /* Mantener la proporción de aspecto de las imágenes */
+
+}
+li#videos{
+    background-image: url(../imgs/film.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center 10px;
+    margin-top: 10px;
+    /*
+    max-width: 100%;  Ajustar el tamaño máximo de las imágenes al ancho del elemento 
+    height: auto;  Mantener la proporción de aspecto de las imágenes */
+
+    
+}
+li#contacto{
+    background-image: url(../imgs/mail.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center 10px;
+    margin-top: 10px;
+    max-width: 100%; /* Ajustar el tamaño máximo de las imágenes al ancho del elemento */
+    height: auto; /* Mantener la proporción de aspecto de las imágenes */
+    
+}
+div#nav li a{
+    text-decoration: none;/*quitar las rayas de abajo*/
+    color: orange;
+}
+div#nav li a:hover{
+    color:white/*cursor al pasar esta en blanco*/
+}
+div#content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    background-image: url("../imgs/lgrey008.jpg");
+    overflow: hidden;/*cuando el elemento es muy grande lo contiene en 1 elemento*/
+    height: 1%;
+}
+div.article{
+    width: 240px;
+    border:1px lightgray solid;
+    background-color: white;
+    text-align: center;
+    line-height: 1.8em;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 22px;
+    margin:30px;
+    float: left;/*elementos flotantes a la izquierda*/
+}
+
+div.article_header{
+    border-bottom: 1px #999999 solid;
+}
+
+div.article_header h2{
+    padding:10px;
+    font-size: 1.2em;
+}
+div#footer{
+    clear:both;/*colocar debjao de los elementos flotantes*/
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+    background-color: #313B44;
+    border-top: 6px black solid;
+    padding-top:15px;
+    padding-bottom:15px;
+
+}
+div#footer a{
+    color:white;
+}
