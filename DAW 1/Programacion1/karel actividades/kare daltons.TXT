@@ -1,0 +1,187 @@
+iniciar-programa
+
+
+define-nueva-instruccion giraderecha como inicio
+ repetir 3 veces
+ gira-izquierda;
+ fin;
+
+define-nueva-instruccion recogerZumbadoresDalton como inicio
+
+
+mientras junto-a-zumbador hacer inicio
+coge-zumbador;
+
+fin;
+
+
+si frente-libre entonces inicio
+avanza;
+fin;
+
+fin;
+
+define-nueva-instruccion cuartoDalton como inicio
+
+       si junto-a-zumbador entonces inicio
+   coge-zumbador;
+
+   fin;
+   si junto-a-zumbador entonces inicio
+   coge-zumbador;
+   fin;
+
+     si junto-a-zumbador entonces inicio
+   coge-zumbador;
+   fin;
+     si junto-a-zumbador entonces inicio
+   coge-zumbador;
+   fin;
+
+
+     si no-junto-a-zumbador y frente-bloqueado entonces inicio
+     repetir 2 veces
+         gira-izquierda;
+         avanza;
+           mientras junto-a-zumbador hacer inicio
+    recogerZumbadoresDalton;
+    fin;
+      fin
+        sino inicio
+    repetir 4 veces
+    deja-zumbador;
+    repetir 2 veces
+    gira-izquierda;
+    avanza;
+    avanza;
+    avanza;
+    giraderecha;
+        avanza;
+        fin;
+     fin;
+
+
+
+define-nueva-instruccion tercerDalton como inicio
+
+       si junto-a-zumbador entonces inicio
+   coge-zumbador;
+
+   fin;
+   si junto-a-zumbador entonces inicio
+   coge-zumbador;
+   fin;
+
+     si junto-a-zumbador entonces inicio
+   coge-zumbador;
+   fin;
+
+   si no-junto-a-zumbador entonces inicio
+   repetir 3 veces
+   deja-zumbador;
+       avanza;
+       cuartoDalton;
+       fin
+        sino inicio
+    repetir 3 veces
+    deja-zumbador;
+    repetir 2 veces
+    gira-izquierda;
+    avanza;
+    avanza;
+    giraderecha;
+        avanza;
+
+     fin;
+    fin;
+ define-nueva-instruccion segundoDalton como inicio
+
+   si junto-a-zumbador entonces inicio
+   coge-zumbador;
+
+   fin;
+   si junto-a-zumbador entonces inicio
+   coge-zumbador;
+   fin;
+
+   si no-junto-a-zumbador entonces inicio
+   repetir 2 veces
+   deja-zumbador;
+       avanza;
+    tercerDalton;
+
+      fin
+      sino inicio
+    repetir 2 veces
+    deja-zumbador;
+    repetir 2 veces
+    gira-izquierda;
+    avanza;
+    giraderecha;
+        avanza;
+
+
+    fin;
+      fin;
+
+
+ define-nueva-instruccion primerDalton como inicio
+
+   si junto-a-zumbador entonces inicio
+   coge-zumbador;
+   fin;
+
+
+   si no-junto-a-zumbador entonces inicio
+   deja-zumbador;
+       giraderecha;
+   avanza;
+   segundoDalton;
+   fin
+   sino inicio
+   deja-zumbador;
+   avanza;
+       fin;
+   fin;
+
+
+
+
+
+
+
+define-nueva-instruccion salircasa como inicio
+
+ giraderecha;
+ mientras izquierda-bloqueada hacer inicio
+ avanza;
+ si frente-bloqueado entonces inicio
+ giraderecha;
+ avanza;
+ fin;
+ si frente-libre y izquierda-libre entonces inicio
+ gira-izquierda;
+ avanza;
+fin;
+si izquierda-bloqueada y derecha-bloqueada entonces inicio
+avanza;
+fin;
+ fin;
+ fin;
+
+
+
+    inicia-ejecucion
+
+    mientras izquierda-bloqueada y ningun-zumbador-en-la-mochila hacer inicio
+    primerDalton;
+   fin;
+
+
+     salircasa;
+
+
+
+        apagate;
+    termina-ejecucion
+finalizar-programa

@@ -1,0 +1,82 @@
+iniciar-programa
+          (*inicia programa*)
+
+
+define-nueva-instruccion zumbadores como inicio
+si junto-a-zumbador entonces
+coge-zumbador
+fin;
+
+(*avanza siemper que se cumpal que delante este libre y derecha bloqueada*)
+define-nueva-instruccion avanzar-libre como inicio
+
+mientras frente-libre y derecha-bloqueada hacer inicio
+avanza;
+zumbadores;
+
+    fin;
+        fin;
+
+(*define-nueva-instruccion avanze como inicio
+mientras frente-libre hacer inicio
+avanza;
+fin;
+fin;*)
+
+(*se pone orientada al este*)
+define-nueva-instruccion girar-derecha como inicio
+
+repetir 3 veces inicio
+gira-izquierda;
+
+    fin;
+        fin;
+
+
+
+
+(*si hay frente bloqueado*)
+define-nueva-instruccion pared como inicio
+mientras frente-bloqueado hacer inicio
+
+    gira-izquierda;
+    avanzar-libre;
+    zumbadores;
+
+    fin;
+        fin;
+
+
+
+
+           (*buscando la puerta y si al encuenta sale a traves de ella*)
+define-nueva-instruccion puerta como inicio
+mientras derecha-libre y frente-libre hacer inicio
+
+girar-derecha;
+avanza;
+zumbadores;
+gira-izquierda;
+avanzar-libre;
+pared;
+
+
+si frente-libre y izquierda-libre y derecha-libre  entonces inicio
+apagate;
+
+  fin;
+    fin;
+        fin;
+
+
+
+
+inicia-ejecucion
+
+           pared;
+           puerta;
+
+
+    termina-ejecucion
+
+finalizar-programa

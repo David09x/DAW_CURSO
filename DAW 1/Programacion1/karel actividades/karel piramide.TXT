@@ -1,0 +1,53 @@
+iniciar-programa
+          (*inicia programa*)
+define-nueva-instruccion avanza-libre como
+inicio
+
+      (*bucle while*)
+mientras frente-libre hacer inicio
+        avanza;
+       fin;
+     fin;
+
+define-nueva-instruccion girar-derecha como
+inicio
+         repetir 3 veces gira-izquierda;
+
+   fin;
+
+define-nueva-instruccion pared como
+inicio
+
+    mientras frente-bloqueado hacer inicio
+
+    gira-izquierda;
+
+    avanza;
+
+    girar-derecha;
+
+    avanza;
+
+    fin;
+
+    fin;
+
+    inicia-ejecucion
+
+       avanza-libre;
+
+       gira-izquierda;
+
+       avanza;
+
+       girar-derecha;
+
+       avanza;
+
+       pared;
+
+        apagate;
+
+    termina-ejecucion
+
+finalizar-programa
