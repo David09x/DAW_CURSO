@@ -1,0 +1,34 @@
+
+#primero .destacado{
+    $colorLetra: #FF8000;
+    color: $colorLetra;
+    $alinearTexto: center;
+    text-align: $alinearTexto;
+    $tamanyoLetra: 1.6rem;
+    font-size: $tamanyoLetra;
+    $paddingMargen: 6px;
+    padding: $paddingMargen;
+}
+
+#segundo .destacado{
+    $colorLetra: #2E5F64;
+    color: $colorLetra;
+    $subrayado: underline;
+    text-decoration: $subrayado;
+    $tamanyoLetra: 1.4rem;
+    font-size: $tamanyoLetra;
+    $paddingMargen: 5px;
+    padding: $paddingMargen;
+}
+
+#parrafos p::first-line{
+    $tipoLetra:italic;
+    font-style: $tipoLetra;
+}
+
+#parrafos{
+    $alineacionDerecha: right;
+    text-align: $alineacionDerecha;
+    $paddingTexto:20px;
+    padding:$paddingTexto;
+}
