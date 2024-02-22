@@ -1,0 +1,13 @@
+SELECT  pelis.idPelis, pelis.Titol FROM pelis WHERE pelis.idPelis NOT IN (SELECT actor_peli.Peli FROM `actor`,actor_peli WHERE actor.id = actor_peli.Actor AND Any_Naixement > 1980);
+
+SELECT actor.id, actor.Nom FROM Actor WHERE actor.id NOT IN(SELECT actor_peli.Actor FROM `actor_peli` GROUP BY actor_peli.Actor);
+
+SELECT  director.Nom, director.iddirector from director,pelis WHERE director.iddirector = pelis.iddirector GROUP BY pelis.iddirector  HAVING COUNT(*) > (SELECT COUNT(*) FROM `pelis`,director WHERE pelis.iddirector = director.iddirector AND director.iddirector = "7");
+
+SELECT DISTINCT pelis.idPelis,pelis.Titol  FROM actor,actor_peli,pelis WHERE actor.id = actor_peli.Actor AND pelis.idPelis = actor_peli.Peli AND Any_Naixement IN (SELECT MAX(Any_Naixement) FROM actor);
+
+SELECT actor.id, actor.nom FROM actor WHERE actor.id NOT IN (SELECT actor.id FROM `pelis`,actor,actor_peli WHERE actor_peli.Actor = actor.id AND pelis.idPelis=actor_peli.Peli AND Any >2000);
+
+
+SELECT actor.id, actor.nom FROM actor WHERE actor.id NOT IN (SELECT actor_peli.Actor FROM `pelis`,actor_peli,director WHERE pelis.idPelis=actor_peli.Peli AND director.iddirector = pelis.iddirector AND director.NOm = "James Cameron");
+

@@ -1,0 +1,46 @@
+• Fes un llistat dels hotels que el codi postal acabe en 0. (0,5 punts)
+
+	SELECT* FROM `hotel` WHERE hcpostal LIKE "%0";
+
+• Fes un llistat dels empleats que tinguen d’ofici qualsevol excepte “Pintor” (0,5 punts)
+
+	SELECT * FROM `empleat` WHERE  ofiEmp NOT LIKE "Pintor";
+
+• Fes un llistat dels hotels que tinguen categoria 5 (0,5 punts)
+
+	SELECT * FROM `hotel` WHERE hcat = 5
+
+• Fes un llistat que diga quants hotels hi ha de cada categoria (1 punt)
+
+	SELECT hcat AS CATEGORIA, COUNT(*) CUANTOS FROM `hotel` GROUP BY hcat;
+
+• Fes el mateix llistat anterior però que mostre només les categories que tinguen més d’un hotel
+(1 punt)
+
+	SELECT hcat AS CATEGORIA, COUNT(*) FROM `hotel` GROUP BY hcat HAVING COUNT(*) >1;
+
+• Fes un llistat dels empleats (nom, cognoms i nom de l’hotel) que treballen a hotels de Sueca (1
+punt)
+
+	SELECT nomEmp AS NOMBRE,cognomEmp AS APELLIDO,hotel.hnom AS NOMBREHOTEL FROM empleat,hotel WHERE empleat.idHotel = hotel.idhotel AND hotel.hpob = "Sueca";
+
+• Fes un llistat que mostre quantes reserves s’han fet (en total) en hotels de categoria 5 (1 punt)
+
+	SELECT  COUNT(*) AS CUANTOS FROM reserva,hotel WHERE reserva.idhotel = hotel.idhotel AND hotel.hcat = "5";
+
+• Fes un llistat dels empleats que no treballen a Cullera i cobren 1000€ (1 punt)
+
+	SELECT   nomEmp AS NOMBRE ,cognomEmp AS APELLIDO FROM empleat,hotel WHERE hotel.idhotel = empleat.idHotel AND NOT  hotel.hpob = "Cullera" AND souEmp = 1000;
+
+• Fes una consulta que mostre el preu màxim, el mínim i el preu mig de les habitacions dels hotels
+2, 4 i 6 (1 punt)
+
+	SELECT idhotel AS HOTELNOMBRE, MAX(preu) AS PRECIOMAX, MIN(preu) AS PRECIOMIN,AVG(preu) AS PRECIOMEDIO FROM habitacio WHERE idhotel IN (2,4,6) GROUP BY idhotel;
+
+• Fes un llistat dels hotels (nom i població) que tinguen habitacions amb 3 o més llits (1 punt)
+
+	SELECT hotel.hnom AS NOMBRE , hotel.hpob AS POBLACION FROM habitacio,hotel WHERE habitacio.idhotel = hotel.idhotel AND  llits >3;
+
+• Fes un llistat dels hotels que mostre cada hotel quants llit té en total (1.5 punts)
+
+	SELECT hotel.hnom  AS NOMBRE , hotel.hpob AS POBLACION , COUNT(*) AS CAMAS FROM habitacio,hotel WHERE habitacio.idhotel = hotel.idhotel GROUP BY hnom;
