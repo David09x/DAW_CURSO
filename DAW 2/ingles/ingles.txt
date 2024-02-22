@@ -1,0 +1,676 @@
+Libro tema 10
+4-
+ -he had recive an email from a company he doesnt know.
+ -because it is a word docuemnt
+ -list of price of products.
+ -because she thinks it is a cclient
+
+5-
+ a-embed
+ b-HTML
+ c-mark as read
+ d- save draft
+ e- spam
+ f- carbon copy
+ h-  email client
+
+6- username
+   attachment
+  signature
+  Foward
+  folder
+ junk
+ filter
+ 
+ vocabulario
+ 
+ 1-
+
+3- filter
+4-username
+5-spam
+6-junk
+7-forward
+8-malware
+9-signature
+
+
+Libro tema 10
+
+7-
+a-
+1-h
+2-a
+3-g
+4-i
+5-d
+6-f
+7-b
+8-c
+9-e
+
+pagina 42
+
+1)
+
+1-b
+2-b
+3-b
+4-b
+5-a
+6-b
+
+2)
+
+a)5th
+b)times
+b)settings
+b)exchange rate
+a)tips
+
+4)
+
+2a-4
+1b-2
+4c-3
+3d-1
+
+5)
+
+1-b
+2-a
+3-a
+4-b
+5-a
+6-a
+7-b
+
+6)
+1-broswer
+2-source
+3-hyperlink
+4-history
+5-advance search
+6-research
+7-url
+
+7)
+1-ranking
+2-search engine
+3-search box
+4-keywords
+5-results
+
+workbook 22
+
+3)
+
+1-b
+2-c
+3-g
+4-f
+5-d
+6-a
+7-e
+
+4)
+
+1-search box
+2-keyworkd
+3-results
+4-url
+5-hyperlink
+
+5)
+
+1-custom
+2-ranking
+3-source
+4-browsers
+5-history
+6-reseach
+7-term
+
+6)
+
+1-
+2-GPS
+3-
+4-
+5-dont combite
+6-sofware
+7-history
+
+Gramma pag 64
+
+1)
+
+1- m not going to open
+2- is going to check
+3- are going to install
+4- is going to forward
+5- m going to use
+6- arent going to work
+
+
+2)
+
+1-Are going to Ms Sanders and the IT department to discuss
+2-is  Ms Sanders going to send
+3- Mr sanders Is going to
+4-Is  Ms Sanders going to 
+5-Are  ms sanders and jeff going to
+
+3)
+1-No they arent
+2- Yes he is
+3-No, he inst
+4-Yes he is
+5-Yes, they are.
+
+4)
+ 
+1-are opening
+2-isnt participating 
+3-Is leaving
+4-im not going
+5-are you installing
+
+5)
+
+1-The new program will have
+2-I will foward
+3-They will give
+4-wont get
+5-Will be
+
+6)
+1- Will you find
+2- i a basic search
+3- will the result of their research
+4- will the maware
+5- will these keywords
+
+8)
+
+1-Will work 
+2- will like 
+3-Will you charge
+4-will help
+5-wont have
+
+a-wont be
+b- wont cost
+c- will perform
+d-will become
+e-wont have
+
+workbook tema 11
+
+1.
+
+1-enhance
+2-configure
+3-apply
+4-customise
+5-sort
+6-merge
+
+2.
+
+1-track
+2-display
+3-chart
+4-table
+5-events
+6-correspondence
+7-reminder
+
+3.
+
+1-b
+2-a
+3-b
+4-a
+5-b
+6-a
+
+4.
+
+1-copyright
+2-encode
+3-cashflow
+4-license
+5-database
+6-subscription
+
+5.
+
+1-d
+2-e
+3-g
+4-h
+5-a
+6-c
+7-f
+8-b
+
+6.
+
+1-existing
+2-utilities
+3-fee
+
+4-licensee
+5-shareware
+6-cloudbase
+
+Tema 14.
+
+1.
+
+a)
+b)employees
+c)fibre optic
+d)faster
+e)far to.
+
+2.
+
+C
+A
+B
+
+
+4.
+
+1. secure network
+2. control panel
+3. cable
+4.cd or internet
+5. addicional drivers
+
+5.
+
+1)e
+2)c
+3)d
+4)b
+5)a
+
+6.
+
+1set up
+2 topology
+3DSL
+4LAN
+
+7.
+
+1) good
+2) good
+3) false
+4) true
+5) false
+6) true
+
+8.
+
+1) workstation
+2) remote access
+3)locate
+4)range
+5)set up,topology
+6)backup system
+
+WORKBOOK
+
+1.
+
+1c
+2d
+3a
+4g
+5b
+6e
+7f
+
+1remote access
+2local area network
+3internet servide provider
+4high speed 
+5set up
+6fiber optic
+7backup service
+
+2.
+
+1- range
+2-transmission
+3- DSL
+4-router
+5-topology
+6-workstation
+7- Ethernet
+8-packet
+
+3.
+
+1.b
+2.a
+3.a
+4.b
+
+4.
+
+1subnetwork
+2business grade
+3WAN
+4authorise
+5shared resource
+6transmission control protocol
+
+noteBook pag 58
+
+1.
+
+1)B
+2)B
+3)A
+4)A
+5)A
+6)B
+
+2.
+
+1)D
+2)F
+3)a
+4)b
+5)e
+6)c
+
+4.
+
+1-3.
+
+5.
+
+1)firewall
+2)unauthoried
+3)ip
+4)traffic
+5)incoming
+6)wan
+7)hub
+
+6.
+
+1)c
+2)e
+3)a
+4)d
+5)b
+
+7.
+
+1)switch
+2)outgoing
+3)shared resources
+4)TCP
+5)authorised
+6)gateway
+7)adaptors
+
+8.
+
+a)broandband
+b)WAn
+c)firewall
+d)resoruces
+e)business grade
+
+workbook
+
+5.
+
+1f
+2d
+3g
+4a
+5c
+6e
+7b
+
+6.
+
+1unautohorised
+4incoming
+6firewall
+2traffic
+3switch
+5gateway
+
+
+workbook 15:
+
+-propietary
+-Graphical user interface.
+-entire
+-developer
+-commond line
+-Bundle software
+
+2.
+-programmers
+-flash drive
+-fee
+
+3.
+-bundled software
+-multi-task
+-freely available
+-budget
+-realise
+-stable
+-issue
+
+4
+
+-screen
+-1
+-1
+-2
+-2
+-1
+
+5.
+
+-
+-bit
+-infrastructure
+-run
+-BIOS
+-segments
+-pro-installed
+
+6.
+
+-enviroment
+-
+-partition
+-kernel
+-crash
+
+7.
+
+-allocated
+-budget for it,open source materials
+-release some new software,on developt for it
+-freely available
+
+
+student
+
+1)
+1.programing code
+2.GUI
+3.programs
+4.internet 
+5.cant
+
+2)
+1.propietary system
+2.licensed
+3.freely avaible 
+4.individual computers
+
+
+4)
+1.linux
+2.WIndows
+3.windows
+4.windows
+5.linux
+
+5)
+1stable
+2propietary
+3freely available
+4modify
+5bundel software
+
+6)
+1. budget
+2.storage
+3.developers
+4.multitask
+
+8)
+1.b
+2.d
+3.e
+4.f
+5.c
+6.a
+
+pag 65.
+
+5.
+1-flat surface
+2-changing cradle
+3-vpk
+4-pocket-sized
+5-360 degress
+6-dongle
+7-beam
+8-hands free
+
+6.
+1-a
+2-consisting of two parts
+3-b
+4-c
+5-f
+6-g
+7-move at an angle
+
+7-
+1-a
+2-b
+3-b
+4-a
+5-a
+
+8
+1-audio clip
+2-lithium
+3-infrared
+4-beam
+5-voice activated.
+
+pagina 66
+
+
+1)
+1)B
+2)A
+3)B
+4)C
+5)A
+6)D
+
+2)
+1-C
+2-f
+3-a
+4-d
+5-b
+6-e
+
+4)
+1-graphic card, compatible
+2-conexion
+3-
+4-gaming
+5-gogles and motion controller
+
+5)
+1-
+2-
+3-
+4-
+5-
+6-spyware
+
+6)
+1-goggles
+2-review
+3-fps
+4-gaming platforms
+
+
+7)
+
+1-MMORPG
+2-revealed
+3-involve
+4-motion
+5-gadgets
+6-virtual reality
+
+8)
+
+1-b
+2-e
+3-d
+4-a
+5-c
+
+Workbook tema 16
+
+1.
+
+1sized
+2activated
+3surface
+4batteries
+5free
+6cradle
+
+1lithium-ion cradle
+2lithium-ion
+3charging batteries
+4voice actiavted
+5hands free
+6pocket-sized
+
+2-
+
+1-
+2
+3-
+4-
+5-
+6-
+ 
